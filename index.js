@@ -1,5 +1,5 @@
 function displayError() {
-  $('#errors').html("error");
+  $('#errors').html("error please try again");
 }
 
 function renderSearchResult (result){
