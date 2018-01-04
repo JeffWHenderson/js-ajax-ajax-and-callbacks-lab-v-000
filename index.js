@@ -35,6 +35,7 @@ function renderCommits(data) {
 }
 
 function showCommits(el) {
+  console.log(el)
   $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, data => {
     $('#details').html(renderCommits(data));
   }).fail(error => {
