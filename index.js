@@ -1,7 +1,7 @@
 $(document).ready(function (){
 
-  function searchRepositories() {
-    console.log("hello world")
-  }
-
 });
+
+function searchRepositories() {
+  console.log("hello world")
+}
