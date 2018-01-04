@@ -17,6 +17,7 @@ let renderSearchResults = (data) => data.items.map( result => renderSearchResult
 
 function searchRepositories() {
   const searchTerms = $('#searchTerms').val();
+  console.log(searchTerms)
   let apiUrl = `https://api.github.com/search/repositories?q=${searchTerms}`;
   $.get(apiUrl, data => {
     $('#results').html(renderSearchResults(data))
