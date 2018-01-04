@@ -20,10 +20,11 @@
   </head>
   <body>
     <main id="main">
-      
+
       <div class="">
           <input type="text" id="searchTerms" value="">
-          <a href="#" id="search" onSubmit="searchRepositories()">Search</a>
+          <a href="#" onclick="searchRepositories()">Search</a>
+          <a href="#" onclick="searchRepositories(); return false">Search Repositories</a>
       </div>
 
       <div id="errors"></div>
